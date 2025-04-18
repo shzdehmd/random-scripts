@@ -2,6 +2,7 @@
 
 ## How to use?
 
+0. Run `npm install`
 1. Fill the information in .env.template
 2. Rename .env.template to just .env
 3. Run `node search.js`
