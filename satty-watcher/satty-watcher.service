@@ -1,0 +1,14 @@
+[Unit]
+Description=Go Satty Watcher
+After=graphical-session.target
+
+[Service]
+# Set the working directory so Go finds the .env file
+WorkingDirectory=%h/.local/bin/satty-watcher
+# Point to the binary inside that same folder
+ExecStart=%h/.local/bin/satty-watcher/satty-watcher
+Restart=always
+RestartSec=3
+
+[Install]
+WantedBy=default.target
